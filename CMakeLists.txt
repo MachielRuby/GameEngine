@@ -29,12 +29,14 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${EXECUTABLE_OUTPUT_PATH}/Release)
 set(INCLUDE_PATH ${ROOT_PATH}/include)
 add_subdirectory(${INCLUDE_PATH}/Hazel)
 
+
 message("EXECUTABLE_OUTPUT_PATH = ${EXECUTABLE_OUTPUT_PATH}")
 message("===================================")
 
 
 # 添加头文件目录
 include_directories(${ROOT_PATH}/include)
+include_directories(${ROOT_PATH}/include/spdlog/include)
 
 
 # 添加可执行文件
